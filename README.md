@@ -1,8 +1,8 @@
 # Repl calculator
 
-**Supported values:**: `Double`
+**Supported values:** `Double`
 
-**Supported operations:**: `+`, `-`, `*`, `/`, and parentheses `()`
+**Supported operations:** `+`, `-`, `*`, `/`, and parentheses `()`
   
 **Modules:**
 `Main` - entry point
