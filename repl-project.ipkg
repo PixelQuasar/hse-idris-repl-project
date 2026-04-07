@@ -1,0 +1,7 @@
+package repl-project
+
+modules = Main, Repl, Types, Parser, Tokenize, Syntax, Eval
+main = Main
+
+sourcedir = "src"
+executable = "repl-project"
