@@ -7,5 +7,5 @@ import Repl
 main : IO ()
 main = do
   putStrLn "Idris REPL calculator"
-  putStrLn "Type :q to exit"  
-  repl
+  putStrLn "Type :q to exit"
+  repl Nothing

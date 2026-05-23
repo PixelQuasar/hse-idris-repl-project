@@ -7,20 +7,20 @@ import Types
 %default covering
 
 export
-repl : IO ()
-repl = do
+repl : Maybe Double -> IO ()
+repl ans = do
   putStr "> "
   line <- getLine
-  case parseCommand line of
+  case parseCommand ans line of
     Ok Quit => putStrLn "Bye!"
     Ok (Evaluate expr) =>
       case eval expr of
         Ok value => do
-          putStrLn (show value)
-          repl
+          printLn value
+          repl (Just value)
         Err err => do
           putStrLn err
-          repl
+          repl ans
     Err err => do
       putStrLn err
-      repl
+      repl ans

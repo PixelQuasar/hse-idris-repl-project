@@ -13,4 +13,4 @@
 `Syntax` - converts token sequence into expression tree
 `Eval` - evaluates expression tree and get the result of calculation
 
-Currently only 2/6 modules are declared as `total` by default, other are `covering`. Haven't figured how to fix that yet `:(`
+Currently 3/6 modules are declared as `total` by default, other are `covering`.
